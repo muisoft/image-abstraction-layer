@@ -1,0 +1,1179 @@
+{
+  "{\"filename\":\"/app/server.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          },
+          {
+            "source": "path",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "path"
+              }
+            ]
+          },
+          {
+            "source": "body-parser",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "bodyParser"
+              }
+            ]
+          },
+          {
+            "source": "./routes/router",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "search"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/server.js",
+      "filenameRelative": "/app/server.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "server.js",
+      "sourceFileName": "server.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "server"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _path = require('path');\n\nvar _path2 = _interopRequireDefault(_path);\n\nvar _bodyParser = require('body-parser');\n\nvar _bodyParser2 = _interopRequireDefault(_bodyParser);\n\nvar _router = require('./routes/router');\n\nvar _router2 = _interopRequireDefault(_router);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar app = (0, _express2.default)();\n\napp.use(_express2.default.static(_path2.default.join(__dirname, 'views')));\n\napp.use(_router2.default);\n\napp.listen(process.env.PORT);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6WyJhcHAiLCJ1c2UiLCJzdGF0aWMiLCJqb2luIiwiX19kaXJuYW1lIiwibGlzdGVuIiwicHJvY2VzcyIsImVudiIsIlBPUlQiXSwibWFwcGluZ3MiOiI7O0FBQUE7Ozs7QUFDQTs7OztBQUNBOzs7O0FBRUE7Ozs7OztBQUVBLElBQU1BLE1BQU0sd0JBQVo7O0FBRUFBLElBQUlDLEdBQUosQ0FBUSxrQkFBUUMsTUFBUixDQUFlLGVBQUtDLElBQUwsQ0FBVUMsU0FBVixFQUFxQixPQUFyQixDQUFmLENBQVI7O0FBRUFKLElBQUlDLEdBQUo7O0FBR0FELElBQUlLLE1BQUosQ0FBV0MsUUFBUUMsR0FBUixDQUFZQyxJQUF2QiIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnXG5pbXBvcnQgcGF0aCBmcm9tICdwYXRoJ1xuaW1wb3J0IGJvZHlQYXJzZXIgZnJvbSAnYm9keS1wYXJzZXInXG5cbmltcG9ydCBzZWFyY2ggZnJvbSAnLi9yb3V0ZXMvcm91dGVyJ1xuXG5jb25zdCBhcHAgPSBleHByZXNzKClcblxuYXBwLnVzZShleHByZXNzLnN0YXRpYyhwYXRoLmpvaW4oX19kaXJuYW1lLCAndmlld3MnKSkpXG5cbmFwcC51c2Uoc2VhcmNoKVxuXG5cbmFwcC5saXN0ZW4ocHJvY2Vzcy5lbnYuUE9SVCkiXX0=",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "server.js"
+      ],
+      "names": [
+        "app",
+        "use",
+        "static",
+        "join",
+        "__dirname",
+        "listen",
+        "process",
+        "env",
+        "PORT"
+      ],
+      "mappings": ";;AAAA;;;;AACA;;;;AACA;;;;AAEA;;;;;;AAEA,IAAMA,MAAM,wBAAZ;;AAEAA,IAAIC,GAAJ,CAAQ,kBAAQC,MAAR,CAAe,eAAKC,IAAL,CAAUC,SAAV,EAAqB,OAArB,CAAf,CAAR;;AAEAJ,IAAIC,GAAJ;;AAGAD,IAAIK,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB",
+      "file": "server.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "import express from 'express'\nimport path from 'path'\nimport bodyParser from 'body-parser'\n\nimport search from './routes/router'\n\nconst app = express()\n\napp.use(express.static(path.join(__dirname, 'views')))\n\napp.use(search)\n\n\napp.listen(process.env.PORT)"
+      ]
+    },
+    "mtime": 1523052680691
+  },
+  "{\"filename\":\"/app/app.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          },
+          {
+            "source": "path",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "path"
+              }
+            ]
+          },
+          {
+            "source": "body-parser",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "bodyParser"
+              }
+            ]
+          },
+          {
+            "source": "./routes/router",
+            "imported": [
+              "router"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "router",
+                "local": "router"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/app.js",
+      "filenameRelative": "/app/app.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "app.js",
+      "sourceFileName": "app.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "app"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _path = require('path');\n\nvar _path2 = _interopRequireDefault(_path);\n\nvar _bodyParser = require('body-parser');\n\nvar _bodyParser2 = _interopRequireDefault(_bodyParser);\n\nvar _router = require('./routes/router');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar app = (0, _express2.default)();\n\napp.use(_express2.default.static(_path2.default.join(__dirname, 'views')));\napp.use(_bodyParser2.default.json());\n\napp.use(_router.router);\napp.listen(process.argv[2]);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5qcyJdLCJuYW1lcyI6WyJhcHAiLCJ1c2UiLCJzdGF0aWMiLCJqb2luIiwiX19kaXJuYW1lIiwianNvbiIsImxpc3RlbiIsInByb2Nlc3MiLCJhcmd2Il0sIm1hcHBpbmdzIjoiOztBQUFBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUVBOzs7O0FBRUEsSUFBTUEsTUFBTSx3QkFBWjs7QUFFQUEsSUFBSUMsR0FBSixDQUFRLGtCQUFRQyxNQUFSLENBQWUsZUFBS0MsSUFBTCxDQUFVQyxTQUFWLEVBQXFCLE9BQXJCLENBQWYsQ0FBUjtBQUNBSixJQUFJQyxHQUFKLENBQVEscUJBQVdJLElBQVgsRUFBUjs7QUFFQUwsSUFBSUMsR0FBSjtBQUNBRCxJQUFJTSxNQUFKLENBQVdDLFFBQVFDLElBQVIsQ0FBYSxDQUFiLENBQVgiLCJmaWxlIjoiYXBwLmpzIiwic291cmNlUm9vdCI6Ii9hcHAiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgZXhwcmVzcyBmcm9tICdleHByZXNzJztcbmltcG9ydCBwYXRoIGZyb20gJ3BhdGgnXG5pbXBvcnQgYm9keVBhcnNlciBmcm9tICdib2R5LXBhcnNlcidcblxuaW1wb3J0IHsgcm91dGVyIH0gZnJvbSAnLi9yb3V0ZXMvcm91dGVyJ1xuXG5jb25zdCBhcHAgPSBleHByZXNzKClcblxuYXBwLnVzZShleHByZXNzLnN0YXRpYyhwYXRoLmpvaW4oX19kaXJuYW1lLCAndmlld3MnKSkpXG5hcHAudXNlKGJvZHlQYXJzZXIuanNvbigpKVxuXG5hcHAudXNlKHJvdXRlcilcbmFwcC5saXN0ZW4ocHJvY2Vzcy5hcmd2WzJdKSJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "app.js"
+      ],
+      "names": [
+        "app",
+        "use",
+        "static",
+        "join",
+        "__dirname",
+        "json",
+        "listen",
+        "process",
+        "argv"
+      ],
+      "mappings": ";;AAAA;;;;AACA;;;;AACA;;;;AAEA;;;;AAEA,IAAMA,MAAM,wBAAZ;;AAEAA,IAAIC,GAAJ,CAAQ,kBAAQC,MAAR,CAAe,eAAKC,IAAL,CAAUC,SAAV,EAAqB,OAArB,CAAf,CAAR;AACAJ,IAAIC,GAAJ,CAAQ,qBAAWI,IAAX,EAAR;;AAEAL,IAAIC,GAAJ;AACAD,IAAIM,MAAJ,CAAWC,QAAQC,IAAR,CAAa,CAAb,CAAX",
+      "file": "app.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "import express from 'express';\nimport path from 'path'\nimport bodyParser from 'body-parser'\n\nimport { router } from './routes/router'\n\nconst app = express()\n\napp.use(express.static(path.join(__dirname, 'views')))\napp.use(bodyParser.json())\n\napp.use(router)\napp.listen(process.argv[2])"
+      ]
+    },
+    "mtime": 1522934322000
+  },
+  "{\"filename\":\"/app/routes/router.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/routes\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          },
+          {
+            "source": "../model/searchHistory",
+            "imported": [
+              "SearchHistory"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "SearchHistory",
+                "local": "SearchHistory"
+              }
+            ]
+          },
+          {
+            "source": "../bing/bingSearch",
+            "imported": [
+              "BingSearch"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "BingSearch",
+                "local": "BingSearch"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/routes/router.js",
+      "filenameRelative": "/app/routes/router.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "router.js",
+      "sourceFileName": "router.js",
+      "sourceRoot": "/app/routes",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/routes",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "router"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _searchHistory = require('../model/searchHistory');\n\nvar _bingSearch = require('../bing/bingSearch');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar router = _express2.default.Router();\n\nrouter.get('/api/search/:query', function (req, res) {\n  var query = req.params.query;\n  var offset = req.query.offset || 4;\n  var when = Math.round(new Date().getTime() / 1000);\n\n  (0, _bingSearch.BingSearch)(query, offset).then(function (data) {\n    var images = getImages(data);\n    res.status(200).json(images);\n  }).catch(function (error) {\n    return res.status(500).json({ 'error': error });\n  });\n\n  saveSearch(when, query);\n});\n\nrouter.get('/api/latest', function (req, res) {\n  getLatestSearches(res);\n});\n\nvar getImages = function getImages(images) {\n  return images.value.map(function (img, i) {\n    return {\n      'alt': img.name,\n      'contentUrl': img.contentUrl,\n      'hostPageUrl': img.hostPageUrl\n    };\n  });\n};\nvar getLatestSearches = function getLatestSearches(res) {\n  return _searchHistory.SearchHistory.find({}).select({ _id: 0, when: 1, query: 1 }).then(function (data) {\n    res.status(200).json(data);\n  });\n};\nvar saveSearch = function saveSearch(when, query) {\n  return new _searchHistory.SearchHistory({ when: when, query: query }).save();\n};\nexports.default = router;\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJvdXRlci5qcyJdLCJuYW1lcyI6WyJyb3V0ZXIiLCJSb3V0ZXIiLCJnZXQiLCJyZXEiLCJyZXMiLCJxdWVyeSIsInBhcmFtcyIsIm9mZnNldCIsIndoZW4iLCJNYXRoIiwicm91bmQiLCJEYXRlIiwiZ2V0VGltZSIsInRoZW4iLCJpbWFnZXMiLCJnZXRJbWFnZXMiLCJkYXRhIiwic3RhdHVzIiwianNvbiIsImNhdGNoIiwiZXJyb3IiLCJzYXZlU2VhcmNoIiwiZ2V0TGF0ZXN0U2VhcmNoZXMiLCJ2YWx1ZSIsIm1hcCIsImltZyIsImkiLCJuYW1lIiwiY29udGVudFVybCIsImhvc3RQYWdlVXJsIiwiZmluZCIsInNlbGVjdCIsIl9pZCIsInNhdmUiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUNBOzs7O0FBRUE7O0FBQ0E7Ozs7QUFFQSxJQUFNQSxTQUFRLGtCQUFRQyxNQUFSLEVBQWQ7O0FBRUFELE9BQU9FLEdBQVAsQ0FBVyxvQkFBWCxFQUFpQyxVQUFDQyxHQUFELEVBQU1DLEdBQU4sRUFBYztBQUM3QyxNQUFJQyxRQUFRRixJQUFJRyxNQUFKLENBQVdELEtBQXZCO0FBQ0EsTUFBSUUsU0FBU0osSUFBSUUsS0FBSixDQUFVRSxNQUFWLElBQW9CLENBQWpDO0FBQ0EsTUFBSUMsT0FBT0MsS0FBS0MsS0FBTCxDQUFXLElBQUlDLElBQUosR0FBV0MsT0FBWCxLQUF1QixJQUFsQyxDQUFYOztBQUVBLDhCQUFXUCxLQUFYLEVBQWtCRSxNQUFsQixFQUNHTSxJQURILENBQ1MsZ0JBQVE7QUFDYixRQUFJQyxTQUFTQyxVQUFVQyxJQUFWLENBQWI7QUFDQVosUUFBSWEsTUFBSixDQUFXLEdBQVgsRUFBZ0JDLElBQWhCLENBQXFCSixNQUFyQjtBQUNELEdBSkgsRUFLR0ssS0FMSCxDQUtVO0FBQUEsV0FDTmYsSUFBSWEsTUFBSixDQUFXLEdBQVgsRUFBZ0JDLElBQWhCLENBQXFCLEVBQUMsU0FBU0UsS0FBVixFQUFyQixDQURNO0FBQUEsR0FMVjs7QUFTQUMsYUFBV2IsSUFBWCxFQUFpQkgsS0FBakI7QUFDRCxDQWZEOztBQWlCQUwsT0FBT0UsR0FBUCxDQUFXLGFBQVgsRUFBMEIsVUFBQ0MsR0FBRCxFQUFNQyxHQUFOLEVBQWM7QUFDcENrQixvQkFBa0JsQixHQUFsQjtBQUNILENBRkQ7O0FBSUEsSUFBTVcsWUFBWSxTQUFaQSxTQUFZLENBQUNELE1BQUQsRUFBWTtBQUMzQixTQUFPQSxPQUFPUyxLQUFQLENBQWFDLEdBQWIsQ0FBaUIsVUFBQ0MsR0FBRCxFQUFNQyxDQUFOLEVBQVk7QUFDL0IsV0FBTztBQUNILGFBQU9ELElBQUlFLElBRFI7QUFFSCxvQkFBY0YsSUFBSUcsVUFGZjtBQUdILHFCQUFlSCxJQUFJSTtBQUhoQixLQUFQO0FBS0YsR0FOSSxDQUFQO0FBT0YsQ0FSRDtBQVNBLElBQU1QLG9CQUFvQixTQUFwQkEsaUJBQW9CLENBQUNsQixHQUFELEVBQVM7QUFDakMsU0FBTyw2QkFDRjBCLElBREUsQ0FDRyxFQURILEVBRUZDLE1BRkUsQ0FFSyxFQUFDQyxLQUFLLENBQU4sRUFBU3hCLE1BQU0sQ0FBZixFQUFrQkgsT0FBTyxDQUF6QixFQUZMLEVBR0ZRLElBSEUsQ0FHRyxVQUFDRyxJQUFELEVBQVU7QUFDYlosUUFBSWEsTUFBSixDQUFXLEdBQVgsRUFBZ0JDLElBQWhCLENBQXFCRixJQUFyQjtBQUNGLEdBTEUsQ0FBUDtBQU1ELENBUEQ7QUFRQSxJQUFNSyxhQUFhLFNBQWJBLFVBQWEsQ0FBQ2IsSUFBRCxFQUFPSCxLQUFQLEVBQWlCO0FBQ2xDLFNBQU8saUNBQWtCLEVBQUNHLFVBQUQsRUFBT0gsWUFBUCxFQUFsQixFQUFpQzRCLElBQWpDLEVBQVA7QUFDRCxDQUZEO2tCQUdlakMsTSIsImZpbGUiOiJyb3V0ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcC9yb3V0ZXMiLCJzb3VyY2VzQ29udGVudCI6WyJcbmltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnXG5cbmltcG9ydCB7U2VhcmNoSGlzdG9yeX0gZnJvbSAnLi4vbW9kZWwvc2VhcmNoSGlzdG9yeSdcbmltcG9ydCB7IEJpbmdTZWFyY2ggfSBmcm9tICcuLi9iaW5nL2JpbmdTZWFyY2gnXG5cbmNvbnN0IHJvdXRlcj0gZXhwcmVzcy5Sb3V0ZXIoKVxuXG5yb3V0ZXIuZ2V0KCcvYXBpL3NlYXJjaC86cXVlcnknLCAocmVxLCByZXMpID0+IHtcbiAgbGV0IHF1ZXJ5ID0gcmVxLnBhcmFtcy5xdWVyeVxuICBsZXQgb2Zmc2V0ID0gcmVxLnF1ZXJ5Lm9mZnNldCB8fCA0XG4gIGxldCB3aGVuID0gTWF0aC5yb3VuZChuZXcgRGF0ZSgpLmdldFRpbWUoKSAvIDEwMDApXG4gXG4gIEJpbmdTZWFyY2gocXVlcnksIG9mZnNldClcbiAgICAudGhlbiggZGF0YSA9PiB7XG4gICAgICBsZXQgaW1hZ2VzID0gZ2V0SW1hZ2VzKGRhdGEpXG4gICAgICByZXMuc3RhdHVzKDIwMCkuanNvbihpbWFnZXMpIFxuICAgIH0pXG4gICAgLmNhdGNoKCBlcnJvciA9PiBcbiAgICAgIHJlcy5zdGF0dXMoNTAwKS5qc29uKHsnZXJyb3InOiBlcnJvcn0pXG4gICAgKSBcbiAgXG4gIHNhdmVTZWFyY2god2hlbiwgcXVlcnkpXG59KVxuXG5yb3V0ZXIuZ2V0KCcvYXBpL2xhdGVzdCcsIChyZXEsIHJlcykgPT4ge1xuICAgIGdldExhdGVzdFNlYXJjaGVzKHJlcylcbn0pXG5cbmNvbnN0IGdldEltYWdlcyA9IChpbWFnZXMpID0+IHtcbiAgIHJldHVybiBpbWFnZXMudmFsdWUubWFwKChpbWcsIGkpID0+IHtcbiAgICAgICAgcmV0dXJuIHtcbiAgICAgICAgICAgICdhbHQnOiBpbWcubmFtZSwgXG4gICAgICAgICAgICAnY29udGVudFVybCc6IGltZy5jb250ZW50VXJsLCBcbiAgICAgICAgICAgICdob3N0UGFnZVVybCc6IGltZy5ob3N0UGFnZVVybFxuICAgICAgICB9XG4gICAgIH0pXG59XG5jb25zdCBnZXRMYXRlc3RTZWFyY2hlcyA9IChyZXMpID0+IHtcbiAgcmV0dXJuIFNlYXJjaEhpc3RvcnlcbiAgICAgIC5maW5kKHt9KSBcbiAgICAgIC5zZWxlY3Qoe19pZDogMCwgd2hlbjogMSwgcXVlcnk6IDEgfSlcbiAgICAgIC50aGVuKChkYXRhKSA9PiB7XG4gICAgICAgICByZXMuc3RhdHVzKDIwMCkuanNvbihkYXRhKVxuICAgICAgfSlcbn1cbmNvbnN0IHNhdmVTZWFyY2ggPSAod2hlbiwgcXVlcnkpID0+IHtcbiAgcmV0dXJuIG5ldyBTZWFyY2hIaXN0b3J5KHt3aGVuLCBxdWVyeX0pLnNhdmUoKVxufVxuZXhwb3J0IGRlZmF1bHQgcm91dGVyO1xuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "router.js"
+      ],
+      "names": [
+        "router",
+        "Router",
+        "get",
+        "req",
+        "res",
+        "query",
+        "params",
+        "offset",
+        "when",
+        "Math",
+        "round",
+        "Date",
+        "getTime",
+        "then",
+        "images",
+        "getImages",
+        "data",
+        "status",
+        "json",
+        "catch",
+        "error",
+        "saveSearch",
+        "getLatestSearches",
+        "value",
+        "map",
+        "img",
+        "i",
+        "name",
+        "contentUrl",
+        "hostPageUrl",
+        "find",
+        "select",
+        "_id",
+        "save"
+      ],
+      "mappings": ";;;;;;AACA;;;;AAEA;;AACA;;;;AAEA,IAAMA,SAAQ,kBAAQC,MAAR,EAAd;;AAEAD,OAAOE,GAAP,CAAW,oBAAX,EAAiC,UAACC,GAAD,EAAMC,GAAN,EAAc;AAC7C,MAAIC,QAAQF,IAAIG,MAAJ,CAAWD,KAAvB;AACA,MAAIE,SAASJ,IAAIE,KAAJ,CAAUE,MAAV,IAAoB,CAAjC;AACA,MAAIC,OAAOC,KAAKC,KAAL,CAAW,IAAIC,IAAJ,GAAWC,OAAX,KAAuB,IAAlC,CAAX;;AAEA,8BAAWP,KAAX,EAAkBE,MAAlB,EACGM,IADH,CACS,gBAAQ;AACb,QAAIC,SAASC,UAAUC,IAAV,CAAb;AACAZ,QAAIa,MAAJ,CAAW,GAAX,EAAgBC,IAAhB,CAAqBJ,MAArB;AACD,GAJH,EAKGK,KALH,CAKU;AAAA,WACNf,IAAIa,MAAJ,CAAW,GAAX,EAAgBC,IAAhB,CAAqB,EAAC,SAASE,KAAV,EAArB,CADM;AAAA,GALV;;AASAC,aAAWb,IAAX,EAAiBH,KAAjB;AACD,CAfD;;AAiBAL,OAAOE,GAAP,CAAW,aAAX,EAA0B,UAACC,GAAD,EAAMC,GAAN,EAAc;AACpCkB,oBAAkBlB,GAAlB;AACH,CAFD;;AAIA,IAAMW,YAAY,SAAZA,SAAY,CAACD,MAAD,EAAY;AAC3B,SAAOA,OAAOS,KAAP,CAAaC,GAAb,CAAiB,UAACC,GAAD,EAAMC,CAAN,EAAY;AAC/B,WAAO;AACH,aAAOD,IAAIE,IADR;AAEH,oBAAcF,IAAIG,UAFf;AAGH,qBAAeH,IAAII;AAHhB,KAAP;AAKF,GANI,CAAP;AAOF,CARD;AASA,IAAMP,oBAAoB,SAApBA,iBAAoB,CAAClB,GAAD,EAAS;AACjC,SAAO,6BACF0B,IADE,CACG,EADH,EAEFC,MAFE,CAEK,EAACC,KAAK,CAAN,EAASxB,MAAM,CAAf,EAAkBH,OAAO,CAAzB,EAFL,EAGFQ,IAHE,CAGG,UAACG,IAAD,EAAU;AACbZ,QAAIa,MAAJ,CAAW,GAAX,EAAgBC,IAAhB,CAAqBF,IAArB;AACF,GALE,CAAP;AAMD,CAPD;AAQA,IAAMK,aAAa,SAAbA,UAAa,CAACb,IAAD,EAAOH,KAAP,EAAiB;AAClC,SAAO,iCAAkB,EAACG,UAAD,EAAOH,YAAP,EAAlB,EAAiC4B,IAAjC,EAAP;AACD,CAFD;kBAGejC,M",
+      "file": "router.js",
+      "sourceRoot": "/app/routes",
+      "sourcesContent": [
+        "\nimport express from 'express'\n\nimport {SearchHistory} from '../model/searchHistory'\nimport { BingSearch } from '../bing/bingSearch'\n\nconst router= express.Router()\n\nrouter.get('/api/search/:query', (req, res) => {\n  let query = req.params.query\n  let offset = req.query.offset || 4\n  let when = Math.round(new Date().getTime() / 1000)\n \n  BingSearch(query, offset)\n    .then( data => {\n      let images = getImages(data)\n      res.status(200).json(images) \n    })\n    .catch( error => \n      res.status(500).json({'error': error})\n    ) \n  \n  saveSearch(when, query)\n})\n\nrouter.get('/api/latest', (req, res) => {\n    getLatestSearches(res)\n})\n\nconst getImages = (images) => {\n   return images.value.map((img, i) => {\n        return {\n            'alt': img.name, \n            'contentUrl': img.contentUrl, \n            'hostPageUrl': img.hostPageUrl\n        }\n     })\n}\nconst getLatestSearches = (res) => {\n  return SearchHistory\n      .find({}) \n      .select({_id: 0, when: 1, query: 1 })\n      .then((data) => {\n         res.status(200).json(data)\n      })\n}\nconst saveSearch = (when, query) => {\n  return new SearchHistory({when, query}).save()\n}\nexport default router;\n"
+      ]
+    },
+    "mtime": 1523053555316
+  },
+  "{\"filename\":\"/app/model/searchHistory.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/model\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "mongoose",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "mongoose"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "SearchHistory"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "SearchHistory",
+              "exported": "SearchHistory"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/model/searchHistory.js",
+      "filenameRelative": "/app/model/searchHistory.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "searchHistory.js",
+      "sourceFileName": "searchHistory.js",
+      "sourceRoot": "/app/model",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/model",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "searchHistory"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.SearchHistory = undefined;\n\nvar _mongoose = require('mongoose');\n\nvar _mongoose2 = _interopRequireDefault(_mongoose);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\n_mongoose2.default.connect(process.env.MONGO_DB);\n\nvar searchSchema = _mongoose2.default.Schema({\n    when: Number,\n    query: String\n});\n\nvar SearchHistory = exports.SearchHistory = _mongoose2.default.model('SearchHistory', searchSchema);\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlYXJjaEhpc3RvcnkuanMiXSwibmFtZXMiOlsiY29ubmVjdCIsInByb2Nlc3MiLCJlbnYiLCJNT05HT19EQiIsInNlYXJjaFNjaGVtYSIsIlNjaGVtYSIsIndoZW4iLCJOdW1iZXIiLCJxdWVyeSIsIlN0cmluZyIsIlNlYXJjaEhpc3RvcnkiLCJtb2RlbCJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBOzs7Ozs7QUFDQSxtQkFBU0EsT0FBVCxDQUFpQkMsUUFBUUMsR0FBUixDQUFZQyxRQUE3Qjs7QUFFQSxJQUFNQyxlQUFlLG1CQUFTQyxNQUFULENBQWdCO0FBQ2pDQyxVQUFNQyxNQUQyQjtBQUVqQ0MsV0FBT0M7QUFGMEIsQ0FBaEIsQ0FBckI7O0FBS08sSUFBSUMsd0NBQWdCLG1CQUFTQyxLQUFULENBQWUsZUFBZixFQUFnQ1AsWUFBaEMsQ0FBcEIiLCJmaWxlIjoic2VhcmNoSGlzdG9yeS5qcyIsInNvdXJjZVJvb3QiOiIvYXBwL21vZGVsIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IG1vbmdvb3NlIGZyb20gJ21vbmdvb3NlJ1xubW9uZ29vc2UuY29ubmVjdChwcm9jZXNzLmVudi5NT05HT19EQilcblxuY29uc3Qgc2VhcmNoU2NoZW1hID0gbW9uZ29vc2UuU2NoZW1hKHtcbiAgICB3aGVuOiBOdW1iZXIsXG4gICAgcXVlcnk6IFN0cmluZ1xufSlcblxuZXhwb3J0IGxldCBTZWFyY2hIaXN0b3J5ID0gbW9uZ29vc2UubW9kZWwoJ1NlYXJjaEhpc3RvcnknLCBzZWFyY2hTY2hlbWEpXG5cbiJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "searchHistory.js"
+      ],
+      "names": [
+        "connect",
+        "process",
+        "env",
+        "MONGO_DB",
+        "searchSchema",
+        "Schema",
+        "when",
+        "Number",
+        "query",
+        "String",
+        "SearchHistory",
+        "model"
+      ],
+      "mappings": ";;;;;;;AAAA;;;;;;AACA,mBAASA,OAAT,CAAiBC,QAAQC,GAAR,CAAYC,QAA7B;;AAEA,IAAMC,eAAe,mBAASC,MAAT,CAAgB;AACjCC,UAAMC,MAD2B;AAEjCC,WAAOC;AAF0B,CAAhB,CAArB;;AAKO,IAAIC,wCAAgB,mBAASC,KAAT,CAAe,eAAf,EAAgCP,YAAhC,CAApB",
+      "file": "searchHistory.js",
+      "sourceRoot": "/app/model",
+      "sourcesContent": [
+        "import mongoose from 'mongoose'\nmongoose.connect(process.env.MONGO_DB)\n\nconst searchSchema = mongoose.Schema({\n    when: Number,\n    query: String\n})\n\nexport let SearchHistory = mongoose.model('SearchHistory', searchSchema)\n\n"
+      ]
+    },
+    "mtime": 1523052283017
+  },
+  "{\"filename\":\"/app/bing/bingSearch.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/bing\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "https",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "https"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "BingSearch"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "BingSearch",
+              "exported": "BingSearch"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/bing/bingSearch.js",
+      "filenameRelative": "/app/bing/bingSearch.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "bingSearch.js",
+      "sourceFileName": "bingSearch.js",
+      "sourceRoot": "/app/bing",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/bing",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "bingSearch"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\nexports.BingSearch = undefined;\n\nvar _https = require('https');\n\nvar _https2 = _interopRequireDefault(_https);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar subscriptionKey = process.env.SUBSCRIPTION_KEY;\n\nvar host = 'api.cognitive.microsoft.com';\nvar path = '/bing/v7.0/images/search';\n\nvar BingSearch = exports.BingSearch = function BingSearch(query, offset) {\n    return new Promise(function (resolve, reject) {\n        var options = {\n            method: 'GET',\n            hostname: host,\n            path: path + '?q=' + encodeURIComponent(query) + '&count=' + offset,\n            headers: {\n                'Ocp-Apim-Subscription-Key': subscriptionKey\n            }\n        };\n\n        var req = _https2.default.request(options, function (res) {\n            var body = '';\n            res.on('data', function (d) {\n                body += d;\n            });\n            res.on('end', function () {\n                //callback(null, JSON.parse(body)) \n                resolve(JSON.parse(body));\n            });\n            res.on('error', function (e) {\n                //callback(e.message) \n                reject(e.message);\n            });\n        });\n        req.end();\n    });\n};\n//export default BingSearch\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJpbmdTZWFyY2guanMiXSwibmFtZXMiOlsic3Vic2NyaXB0aW9uS2V5IiwicHJvY2VzcyIsImVudiIsIlNVQlNDUklQVElPTl9LRVkiLCJob3N0IiwicGF0aCIsIkJpbmdTZWFyY2giLCJxdWVyeSIsIm9mZnNldCIsIlByb21pc2UiLCJyZXNvbHZlIiwicmVqZWN0Iiwib3B0aW9ucyIsIm1ldGhvZCIsImhvc3RuYW1lIiwiZW5jb2RlVVJJQ29tcG9uZW50IiwiaGVhZGVycyIsInJlcSIsInJlcXVlc3QiLCJyZXMiLCJib2R5Iiwib24iLCJkIiwiSlNPTiIsInBhcnNlIiwiZSIsIm1lc3NhZ2UiLCJlbmQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQTs7Ozs7O0FBRUEsSUFBSUEsa0JBQWtCQyxRQUFRQyxHQUFSLENBQVlDLGdCQUFsQzs7QUFFQSxJQUFJQyxPQUFPLDZCQUFYO0FBQ0EsSUFBSUMsT0FBTywwQkFBWDs7QUFFTyxJQUFNQyxrQ0FBYSxTQUFiQSxVQUFhLENBQUNDLEtBQUQsRUFBUUMsTUFBUixFQUFtQjtBQUN6QyxXQUFPLElBQUlDLE9BQUosQ0FBWSxVQUFDQyxPQUFELEVBQVVDLE1BQVYsRUFBcUI7QUFDckMsWUFBSUMsVUFBVTtBQUNUQyxvQkFBUyxLQURBO0FBRVRDLHNCQUFXVixJQUZGO0FBR1RDLGtCQUFPQSxPQUFPLEtBQVAsR0FBZVUsbUJBQW1CUixLQUFuQixDQUFmLEdBQTJDLFNBQTNDLEdBQXVEQyxNQUhyRDtBQUlUUSxxQkFBVTtBQUNOLDZDQUE4QmhCO0FBRHhCO0FBSkQsU0FBZDs7QUFTQyxZQUFJaUIsTUFBTSxnQkFBTUMsT0FBTixDQUFjTixPQUFkLEVBQXVCLFVBQUNPLEdBQUQsRUFBTztBQUNwQyxnQkFBSUMsT0FBTyxFQUFYO0FBQ0FELGdCQUFJRSxFQUFKLENBQU8sTUFBUCxFQUFlLFVBQUNDLENBQUQsRUFBTztBQUNsQkYsd0JBQVFFLENBQVI7QUFDSCxhQUZEO0FBR0FILGdCQUFJRSxFQUFKLENBQU8sS0FBUCxFQUFjLFlBQU07QUFDbEI7QUFDRVgsd0JBQVFhLEtBQUtDLEtBQUwsQ0FBV0osSUFBWCxDQUFSO0FBQ0gsYUFIRDtBQUlBRCxnQkFBSUUsRUFBSixDQUFPLE9BQVAsRUFBZ0IsVUFBQ0ksQ0FBRCxFQUFPO0FBQ25CO0FBQ0FkLHVCQUFPYyxFQUFFQyxPQUFUO0FBQ0gsYUFIRDtBQUlILFNBYlMsQ0FBVjtBQWNKVCxZQUFJVSxHQUFKO0FBQ0MsS0F6Qk0sQ0FBUDtBQTBCSCxDQTNCTTtBQTRCUCIsImZpbGUiOiJiaW5nU2VhcmNoLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvYmluZyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBodHRwcyBmcm9tICdodHRwcydcblxubGV0IHN1YnNjcmlwdGlvbktleSA9IHByb2Nlc3MuZW52LlNVQlNDUklQVElPTl9LRVk7XG5cbmxldCBob3N0ID0gJ2FwaS5jb2duaXRpdmUubWljcm9zb2Z0LmNvbSc7XG5sZXQgcGF0aCA9ICcvYmluZy92Ny4wL2ltYWdlcy9zZWFyY2gnO1xuXG5leHBvcnQgY29uc3QgQmluZ1NlYXJjaCA9IChxdWVyeSwgb2Zmc2V0KSA9PiB7XG4gICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcbiAgICAgICBsZXQgb3B0aW9ucyA9IHtcbiAgICAgICAgICAgIG1ldGhvZCA6ICdHRVQnLFxuICAgICAgICAgICAgaG9zdG5hbWUgOiBob3N0LFxuICAgICAgICAgICAgcGF0aCA6IHBhdGggKyAnP3E9JyArIGVuY29kZVVSSUNvbXBvbmVudChxdWVyeSkgKyAnJmNvdW50PScgKyBvZmZzZXQsXG4gICAgICAgICAgICBoZWFkZXJzIDoge1xuICAgICAgICAgICAgICAgICdPY3AtQXBpbS1TdWJzY3JpcHRpb24tS2V5JyA6IHN1YnNjcmlwdGlvbktleSxcbiAgICAgICAgICAgIH1cbiAgICAgICAgfTtcblxuICAgICAgICBsZXQgcmVxID0gaHR0cHMucmVxdWVzdChvcHRpb25zLCAocmVzKT0+e1xuICAgICAgICAgICAgbGV0IGJvZHkgPSAnJztcbiAgICAgICAgICAgIHJlcy5vbignZGF0YScsIChkKSA9PiB7XG4gICAgICAgICAgICAgICAgYm9keSArPSBkO1xuICAgICAgICAgICAgfSk7XG4gICAgICAgICAgICByZXMub24oJ2VuZCcsICgpID0+IHtcbiAgICAgICAgICAgICAgLy9jYWxsYmFjayhudWxsLCBKU09OLnBhcnNlKGJvZHkpKSBcbiAgICAgICAgICAgICAgICByZXNvbHZlKEpTT04ucGFyc2UoYm9keSkpXG4gICAgICAgICAgICB9KTtcbiAgICAgICAgICAgIHJlcy5vbignZXJyb3InLCAoZSkgPT4ge1xuICAgICAgICAgICAgICAgIC8vY2FsbGJhY2soZS5tZXNzYWdlKSBcbiAgICAgICAgICAgICAgICByZWplY3QoZS5tZXNzYWdlKSAgIFxuICAgICAgICAgICAgfSk7XG4gICAgICAgIH0pO1xuICAgIHJlcS5lbmQoKTtcbiAgICB9KTtcbn1cbi8vZXhwb3J0IGRlZmF1bHQgQmluZ1NlYXJjaCJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "bingSearch.js"
+      ],
+      "names": [
+        "subscriptionKey",
+        "process",
+        "env",
+        "SUBSCRIPTION_KEY",
+        "host",
+        "path",
+        "BingSearch",
+        "query",
+        "offset",
+        "Promise",
+        "resolve",
+        "reject",
+        "options",
+        "method",
+        "hostname",
+        "encodeURIComponent",
+        "headers",
+        "req",
+        "request",
+        "res",
+        "body",
+        "on",
+        "d",
+        "JSON",
+        "parse",
+        "e",
+        "message",
+        "end"
+      ],
+      "mappings": ";;;;;;;AAAA;;;;;;AAEA,IAAIA,kBAAkBC,QAAQC,GAAR,CAAYC,gBAAlC;;AAEA,IAAIC,OAAO,6BAAX;AACA,IAAIC,OAAO,0BAAX;;AAEO,IAAMC,kCAAa,SAAbA,UAAa,CAACC,KAAD,EAAQC,MAAR,EAAmB;AACzC,WAAO,IAAIC,OAAJ,CAAY,UAACC,OAAD,EAAUC,MAAV,EAAqB;AACrC,YAAIC,UAAU;AACTC,oBAAS,KADA;AAETC,sBAAWV,IAFF;AAGTC,kBAAOA,OAAO,KAAP,GAAeU,mBAAmBR,KAAnB,CAAf,GAA2C,SAA3C,GAAuDC,MAHrD;AAITQ,qBAAU;AACN,6CAA8BhB;AADxB;AAJD,SAAd;;AASC,YAAIiB,MAAM,gBAAMC,OAAN,CAAcN,OAAd,EAAuB,UAACO,GAAD,EAAO;AACpC,gBAAIC,OAAO,EAAX;AACAD,gBAAIE,EAAJ,CAAO,MAAP,EAAe,UAACC,CAAD,EAAO;AAClBF,wBAAQE,CAAR;AACH,aAFD;AAGAH,gBAAIE,EAAJ,CAAO,KAAP,EAAc,YAAM;AAClB;AACEX,wBAAQa,KAAKC,KAAL,CAAWJ,IAAX,CAAR;AACH,aAHD;AAIAD,gBAAIE,EAAJ,CAAO,OAAP,EAAgB,UAACI,CAAD,EAAO;AACnB;AACAd,uBAAOc,EAAEC,OAAT;AACH,aAHD;AAIH,SAbS,CAAV;AAcJT,YAAIU,GAAJ;AACC,KAzBM,CAAP;AA0BH,CA3BM;AA4BP",
+      "file": "bingSearch.js",
+      "sourceRoot": "/app/bing",
+      "sourcesContent": [
+        "import https from 'https'\n\nlet subscriptionKey = process.env.SUBSCRIPTION_KEY;\n\nlet host = 'api.cognitive.microsoft.com';\nlet path = '/bing/v7.0/images/search';\n\nexport const BingSearch = (query, offset) => {\n    return new Promise((resolve, reject) => {\n       let options = {\n            method : 'GET',\n            hostname : host,\n            path : path + '?q=' + encodeURIComponent(query) + '&count=' + offset,\n            headers : {\n                'Ocp-Apim-Subscription-Key' : subscriptionKey,\n            }\n        };\n\n        let req = https.request(options, (res)=>{\n            let body = '';\n            res.on('data', (d) => {\n                body += d;\n            });\n            res.on('end', () => {\n              //callback(null, JSON.parse(body)) \n                resolve(JSON.parse(body))\n            });\n            res.on('error', (e) => {\n                //callback(e.message) \n                reject(e.message)   \n            });\n        });\n    req.end();\n    });\n}\n//export default BingSearch"
+      ]
+    },
+    "mtime": 1523052523667
+  }
+}
