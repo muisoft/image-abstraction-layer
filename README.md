@@ -56,3 +56,8 @@
     }
   ]
 </code></pre>
+
+
+
+
+You can view the live demo here: https://image-abstraction-muideen.glitch.me/
