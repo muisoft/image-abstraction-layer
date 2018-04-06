@@ -1,7 +1,8 @@
-            <div>
+            <div class="header">
             <h1>
                 Image Search Abstraction Layer
             </h1>
+            </div>
             <blockquote>
                 User stories:
                 <ul>1) I can get the image URLs, alt text and page urls for a set of images relating to a given search string.</ul>
@@ -56,4 +57,4 @@
                 }
               ]
             </code></pre>
-      </div>
+      
